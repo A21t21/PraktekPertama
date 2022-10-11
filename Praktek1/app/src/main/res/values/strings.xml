@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Praktek1</string>
+    <string name="texthello">helloarief</string>
+    <string name="textButton">Ganti Teks Random</string>
+    <string name="pindahbutton">Pindah</string>
+    <string name="api_key">2c4b5c9b12e7a1db6242337110576436</string>
+</resources>
