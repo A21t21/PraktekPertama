@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
+import com.bumptech.glide.Glide
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -60,5 +62,17 @@ class MainActivity : AppCompatActivity() {
             // putExtra(EXTRA_MESSAGE, message)
         }
         startActivity(intent)
+    }
+    fun click(view: View) {
+        //panggil imageview, edit text dan buttonnya
+        val imageView:ImageView = findViewById(R.id.tampil1)
+        val inputurl: EditText = findViewById(R.id.inputurl)
+        val buttonganti:Button = findViewById(R.id.buttonganti)
+        //baca url dari edittextnya
+        val url = inputurl.text.toString()
+        //tampilkan dengan glide
+        Glide.with(this)
+            .load(url)
+            .into(imageView)
     }
 }

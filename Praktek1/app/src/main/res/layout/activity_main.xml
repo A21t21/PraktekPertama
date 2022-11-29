@@ -14,17 +14,18 @@
         android:textColor="#009688"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintHorizontal_bias="0.351"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.193" />
+        app:layout_constraintVertical_bias="0.751" />
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="190dp"
-        android:layout_height="87dp"
-        app:layout_constraintHorizontal_bias="0.837"
+        android:layout_width="110dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="400dp"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -38,18 +39,18 @@
         android:textColor="#009688"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintHorizontal_bias="0.354"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.064" />
+        app:layout_constraintVertical_bias="0.623" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="170dp"
-        android:layout_height="83dp"
-        android:layout_marginTop="96dp"
-        app:layout_constraintHorizontal_bias="0.767"
+        android:layout_width="113dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="496dp"
+        app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -63,18 +64,18 @@
         android:textColor="#009688"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintHorizontal_bias="0.351"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.321" />
+        app:layout_constraintVertical_bias="0.865" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="110dp"
-        android:layout_height="97dp"
-        android:layout_marginTop="196dp"
-        app:layout_constraintHorizontal_bias="0.714"
+        android:layout_width="115dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="584dp"
+        app:layout_constraintHorizontal_bias="0.033"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -84,8 +85,8 @@
         android:id="@+id/buttonGanti"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="352dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="568dp"
         android:text="@string/textButton"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,13 +97,52 @@
         android:id="@+id/buttonPindah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="48dp"
+        android:onClick="pindahPage"
         android:text="@string/pindahbutton"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="@id/buttonGanti"
         app:layout_constraintTop_toTopOf="@id/buttonGanti"
-        tools:visibility="visible"
-        android:onClick="pindahPage"/>
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/inputurl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="url"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <Button
+        android:id="@+id/buttonganti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="click"
+        android:text="Tampilkan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <ImageView
+        android:id="@+id/tampil1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.207"
+        tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
